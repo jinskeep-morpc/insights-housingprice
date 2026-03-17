@@ -8573,7 +8573,7 @@ morpc.frictionless.cast_field_types | WARNING | Field MEMBERCOUNTY is string typ
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [34]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [22]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">housing</span> <span class="o">=</span> <span class="n">housingRaw</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
@@ -8602,7 +8602,7 @@ morpc.frictionless.cast_field_types | WARNING | Field MEMBERCOUNTY is string typ
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [35]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [23]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">housing</span> <span class="o">=</span> <span class="n">housing</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">housing</span><span class="p">[</span><span class="s2">"Year"</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="n">YEAR_RANGE</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">YEAR_RANGE</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">+</span><span class="mi">1</span><span class="p">))]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
@@ -8627,7 +8627,7 @@ morpc.frictionless.cast_field_types | WARNING | Field MEMBERCOUNTY is string typ
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [36]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [24]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">housing</span><span class="p">[</span><span class="s2">"GEOTYPE"</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">morpc</span><span class="o">.</span><span class="n">SUMLEVEL_DESCRIPTIONS</span><span class="p">[</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">3</span><span class="p">]][</span><span class="s1">'hierarchy_string'</span><span class="p">]</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">housing</span><span class="p">[</span><span class="s1">'GEOIDFQ'</span><span class="p">]]</span> 
@@ -8648,7 +8648,7 @@ morpc.frictionless.cast_field_types | WARNING | Field MEMBERCOUNTY is string typ
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [37]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [25]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">housing</span><span class="p">[</span><span class="s1">'GEOTYPE'</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
@@ -8662,12 +8662,12 @@ morpc.frictionless.cast_field_types | WARNING | Field MEMBERCOUNTY is string typ
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[37]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[25]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>GEOTYPE
-COUNTY        120
-REGION15        8
-REGIONCEDS      8
+COUNTY        187
+REGION15       13
+REGIONCEDS     13
 Name: count, dtype: int64</pre>
 </div>
 </div>
@@ -8678,7 +8678,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [38]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [26]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">housing</span>
@@ -8692,7 +8692,7 @@ Name: count, dtype: int64</pre>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[38]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[26]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -8732,14 +8732,14 @@ Name: count, dtype: int64</pre>
 <th>0</th>
 <td>0500000US39041</td>
 <td>Delaware</td>
-<td>2017</td>
-<td>3538.0</td>
-<td>305700.0</td>
-<td>4939.432174</td>
-<td>63764.0</td>
-<td>4.794241</td>
-<td>391215.434481</td>
-<td>81601.115356</td>
+<td>2012</td>
+<td>2263.0</td>
+<td>255000.0</td>
+<td>5624.158972</td>
+<td>53699.0</td>
+<td>4.748692</td>
+<td>348400.633292</td>
+<td>73367.708263</td>
 <td>0.000</td>
 <td>0.000</td>
 <td>COUNTY</td>
@@ -8748,64 +8748,64 @@ Name: count, dtype: int64</pre>
 <th>1</th>
 <td>0500000US39041</td>
 <td>Delaware</td>
-<td>2018</td>
-<td>3306.0</td>
-<td>325000.0</td>
-<td>4625.017676</td>
-<td>64052.0</td>
-<td>5.074002</td>
-<td>405997.941117</td>
-<td>80015.323460</td>
-<td>3.779</td>
-<td>-1.943</td>
+<td>2013</td>
+<td>2706.0</td>
+<td>255950.0</td>
+<td>5497.214079</td>
+<td>54079.0</td>
+<td>4.732891</td>
+<td>344650.298338</td>
+<td>72820.251939</td>
+<td>-1.076</td>
+<td>-0.746</td>
 <td>COUNTY</td>
 </tr>
 <tr>
 <th>2</th>
 <td>0500000US39041</td>
 <td>Delaware</td>
-<td>2019</td>
-<td>3470.0</td>
-<td>339437.5</td>
-<td>4751.639467</td>
-<td>67207.0</td>
-<td>5.050627</td>
-<td>416486.972535</td>
-<td>82462.426701</td>
-<td>6.460</td>
-<td>1.056</td>
+<td>2014</td>
+<td>2909.0</td>
+<td>260000.0</td>
+<td>5305.723439</td>
+<td>56371.0</td>
+<td>4.612301</td>
+<td>344515.156123</td>
+<td>74694.861022</td>
+<td>-1.115</td>
+<td>1.809</td>
 <td>COUNTY</td>
 </tr>
 <tr>
 <th>3</th>
 <td>0500000US39041</td>
 <td>Delaware</td>
-<td>2020</td>
-<td>3726.0</td>
-<td>367000.0</td>
-<td>5513.867529</td>
-<td>66715.0</td>
-<td>5.501012</td>
-<td>444818.276657</td>
-<td>80861.175278</td>
-<td>13.702</td>
-<td>-0.907</td>
+<td>2015</td>
+<td>3356.0</td>
+<td>271354.5</td>
+<td>5613.399008</td>
+<td>58192.0</td>
+<td>4.663089</td>
+<td>359134.246702</td>
+<td>77016.375568</td>
+<td>3.081</td>
+<td>4.973</td>
 <td>COUNTY</td>
 </tr>
 <tr>
 <th>4</th>
 <td>0500000US39041</td>
 <td>Delaware</td>
-<td>2021</td>
-<td>3752.0</td>
-<td>410000.0</td>
-<td>6267.248230</td>
-<td>71839.0</td>
-<td>5.707206</td>
-<td>474637.376831</td>
-<td>83164.571986</td>
-<td>21.324</td>
-<td>1.916</td>
+<td>2016</td>
+<td>3569.0</td>
+<td>280000.0</td>
+<td>4626.019771</td>
+<td>60294.0</td>
+<td>4.643912</td>
+<td>365959.826172</td>
+<td>78804.220569</td>
+<td>5.040</td>
+<td>7.410</td>
 <td>COUNTY</td>
 </tr>
 <tr>
@@ -8825,7 +8825,7 @@ Name: count, dtype: int64</pre>
 <td>...</td>
 </tr>
 <tr>
-<th>131</th>
+<th>208</th>
 <td>M050000US01</td>
 <td>CEDS Region</td>
 <td>2020</td>
@@ -8836,12 +8836,12 @@ Name: count, dtype: int64</pre>
 <td>3.552424</td>
 <td>287253.219531</td>
 <td>80861.175278</td>
-<td>21.331</td>
-<td>-0.907</td>
+<td>43.512</td>
+<td>10.214</td>
 <td>REGIONCEDS</td>
 </tr>
 <tr>
-<th>132</th>
+<th>209</th>
 <td>M050000US01</td>
 <td>CEDS Region</td>
 <td>2021</td>
@@ -8852,12 +8852,12 @@ Name: count, dtype: int64</pre>
 <td>3.758404</td>
 <td>312566.077426</td>
 <td>83164.571986</td>
-<td>32.023</td>
-<td>1.916</td>
+<td>56.158</td>
+<td>13.353</td>
 <td>REGIONCEDS</td>
 </tr>
 <tr>
-<th>133</th>
+<th>210</th>
 <td>M050000US01</td>
 <td>CEDS Region</td>
 <td>2022</td>
@@ -8868,12 +8868,12 @@ Name: count, dtype: int64</pre>
 <td>3.958985</td>
 <td>321561.907365</td>
 <td>81223.322181</td>
-<td>35.823</td>
-<td>-0.463</td>
+<td>60.653</td>
+<td>10.707</td>
 <td>REGIONCEDS</td>
 </tr>
 <tr>
-<th>134</th>
+<th>211</th>
 <td>M050000US01</td>
 <td>CEDS Region</td>
 <td>2023</td>
@@ -8884,12 +8884,12 @@ Name: count, dtype: int64</pre>
 <td>4.121980</td>
 <td>328408.710806</td>
 <td>79672.570938</td>
-<td>38.715</td>
-<td>-2.363</td>
+<td>64.073</td>
+<td>8.594</td>
 <td>REGIONCEDS</td>
 </tr>
 <tr>
-<th>135</th>
+<th>212</th>
 <td>M050000US01</td>
 <td>CEDS Region</td>
 <td>2024</td>
@@ -8900,13 +8900,13 @@ Name: count, dtype: int64</pre>
 <td>4.039162</td>
 <td>335000.000000</td>
 <td>82938.000000</td>
-<td>41.499</td>
-<td>1.638</td>
+<td>67.366</td>
+<td>13.044</td>
 <td>REGIONCEDS</td>
 </tr>
 </tbody>
 </table>
-<p>136 rows × 13 columns</p>
+<p>213 rows × 13 columns</p>
 </div>
 </div>
 </div>
@@ -8928,7 +8928,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [39]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [27]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">temp</span> <span class="o">=</span> <span class="n">housing</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">housing</span><span class="p">[</span><span class="s2">"GEOTYPE"</span><span class="p">]</span> <span class="o">==</span> <span class="s1">'COUNTY'</span><span class="p">]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
@@ -8944,7 +8944,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [40]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [28]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">housing</span> <span class="o">=</span> <span class="n">housing</span><span class="p">[[</span><span class="s1">'GEOIDFQ'</span><span class="p">,</span> <span class="s1">'NAME'</span><span class="p">,</span> <span class="s1">'GEOTYPE'</span><span class="p">,</span> <span class="s1">'Year'</span><span class="p">,</span> <span class="s1">'Number of Sales'</span><span class="p">,</span> <span class="s1">'Median Sale Price'</span><span class="p">,</span>
@@ -8975,7 +8975,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [41]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [29]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">housing</span> <span class="o">=</span> <span class="n">housing</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="p">[</span><span class="s2">"GEOIDFQ"</span><span class="p">,</span><span class="s2">"Year"</span><span class="p">])</span>
@@ -8989,7 +8989,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [42]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [30]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">housingSchema</span> <span class="o">=</span> <span class="n">frictionless</span><span class="o">.</span><span class="n">Schema</span><span class="p">(</span><span class="s1">'output_data/housingcost-long.schema.yaml'</span><span class="p">)</span>
@@ -9003,7 +9003,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [43]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [31]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">housing</span> <span class="o">=</span> <span class="n">morpc</span><span class="o">.</span><span class="n">frictionless</span><span class="o">.</span><span class="n">cast_field_types</span><span class="p">(</span><span class="n">df</span> <span class="o">=</span> <span class="n">housing</span><span class="p">,</span> <span class="n">schema</span><span class="o">=</span><span class="n">housingSchema</span><span class="p">)</span>
@@ -9028,7 +9028,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [44]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [32]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">housing</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">HOUSING_COST_TABLE_PATH</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
@@ -9053,7 +9053,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [45]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [33]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">housingResource</span> <span class="o">=</span> <span class="n">morpc</span><span class="o">.</span><span class="n">frictionless</span><span class="o">.</span><span class="n">create_resource</span><span class="p">(</span><span class="n">HOUSING_COST_FILENAME</span><span class="p">,</span> 
@@ -9085,7 +9085,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [46]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [34]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">scandir</span><span class="p">(</span><span class="n">chartDir</span><span class="p">):</span>
@@ -9277,7 +9277,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [47]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [35]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">columnNames</span><span class="o">=</span><span class="p">[</span><span class="s2">"TileID"</span><span class="p">,</span><span class="s2">"TilesetID"</span><span class="p">,</span><span class="s2">"GeographyType"</span><span class="p">,</span><span class="s2">"GeographyName"</span><span class="p">,</span><span class="s2">"Category"</span><span class="p">,</span><span class="s2">"Headline"</span><span class="p">,</span><span class="s2">"Commentary"</span><span class="p">,</span><span class="s2">"ThumbnailURL"</span><span class="p">,</span><span class="s2">"Contributor"</span><span class="p">,</span><span class="s2">"Vintage"</span><span class="p">,</span><span class="s2">"UpdateInterval"</span><span class="p">,</span><span class="s2">"ShareURL"</span><span class="p">,</span><span class="s2">"DataProductURL"</span><span class="p">,</span><span class="s2">"MoreInformationURL"</span><span class="p">]</span>
@@ -9302,7 +9302,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [48]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [36]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">catalog</span> <span class="o">=</span> <span class="n">housing</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">housing</span><span class="p">[</span><span class="s2">"GEOIDFQ"</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">platformIncludeList</span><span class="p">)]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
@@ -9327,7 +9327,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [49]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [37]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">catalog</span> <span class="o">=</span> <span class="n">catalog</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">items</span><span class="o">=</span><span class="p">[</span><span class="s2">"GEOIDFQ"</span><span class="p">,</span><span class="s2">"NAME"</span><span class="p">,</span><span class="s2">"GEOTYPE"</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="s2">"columns"</span><span class="p">)</span> \
@@ -9355,7 +9355,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [50]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [38]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">catalog</span><span class="p">[</span><span class="s2">"GeographyType"</span><span class="p">]</span> <span class="o">=</span> <span class="n">catalog</span><span class="p">[</span><span class="s2">"GeographyType"</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">({</span>
@@ -9385,7 +9385,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [51]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [39]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">catalog</span><span class="p">[</span><span class="s2">"TileID"</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
@@ -9414,7 +9414,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [52]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [40]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">catalog</span><span class="p">[</span><span class="s2">"ThumbnailURL"</span><span class="p">]</span> <span class="o">=</span> <span class="n">catalog</span><span class="p">[</span><span class="s2">"GEOIDFQ"</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">geoid</span><span class="p">:</span><span class="s2">"https://raw.githubusercontent.com/morpc-insights/insights-housingprice/refs/heads/main/output_data/charts/</span><span class="si">{}</span><span class="s2">.svg"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">geoid</span><span class="p">))</span>
@@ -9439,7 +9439,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [53]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [41]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">catalog</span><span class="p">[</span><span class="s2">"Contributor"</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"Mid-Ohio Regional Planning Commission"</span>
@@ -9467,7 +9467,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [54]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [42]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">catalog</span><span class="p">[</span><span class="s2">"DataProductURL"</span><span class="p">]</span> <span class="o">=</span> <span class="n">catalog</span><span class="p">[</span><span class="s2">"GEOIDFQ"</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">geoid</span><span class="p">:</span><span class="s2">"https://www.arcgis.com/apps/dashboards/237dd7c3dc694feebe0b3e6381f45f93#geoid=</span><span class="si">{}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">geoid</span><span class="p">))</span>
@@ -9492,7 +9492,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [55]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [43]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">catalog</span><span class="p">[</span><span class="s2">"MoreInformationURL"</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"https://morpc1-my.sharepoint.com/:w:/g/personal/aporr_morpc_org/EeowBvR-mvJEsEDFbiSWb1kBE5DcjowKjyYzzKE35vwfwg?e=KCvIsQ"</span>
@@ -9517,7 +9517,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [56]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [44]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">catalog</span> <span class="o">=</span> <span class="n">catalog</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">items</span><span class="o">=</span><span class="n">columnNames</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="s2">"columns"</span><span class="p">)</span>
@@ -9542,7 +9542,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [57]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [45]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">catalog</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -9556,7 +9556,7 @@ Name: count, dtype: int64</pre>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[57]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[45]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -9701,7 +9701,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [58]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [46]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">catalog</span><span class="o">.</span><span class="n">to_excel</span><span class="p">(</span><span class="s2">"catalog.xlsx"</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>

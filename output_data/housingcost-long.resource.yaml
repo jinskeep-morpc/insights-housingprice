@@ -9,6 +9,6 @@ path: housingcost-long.csv
 scheme: file
 format: csv
 mediatype: text/csv
-hash: 46a60e167fca958615987566679151c3
-bytes: 20178
+hash: 86a2cd12ba113e0997b13097d6109dad
+bytes: 31614
 schema: housingcost-long.schema.yaml
