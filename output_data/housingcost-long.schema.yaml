@@ -14,27 +14,30 @@ fields:
   - name: Number of Sales
     type: integer
     description: 'Number of sales that are accounted for in the summary'
-  - name: Median Sales Price
+  - name: Median Sale Price
     type: number
     description: 'Median home sale price for the geography, year-of-sale dollars'
-  - name: Median Sales Price MOE
+  - name: Median Sale Price MOE
     type: number
     description: '90% measurement of error for sales price'
-  - name: Median Household Income (MSA)
+  - name: Median Household Income (Columbus MSA)
     type: integer
     description: 'Median income for residents in Columbus MSA, year-of-sale dollars'
-  - name: Median Household Income MOE (MSA)
-    type: number
-    description: '90% measurement of error of household income.'
-  - name: Sales Price to Income Index (MSA)
+  - name: Sales Price to Income Index (MORPC 15-county region)
     type: number
     description: 'Median sales price of geography / median household income (MSA), year-of-sale dollars'
-  - name: Median Sales Price (2024 Dollars)
+  - name: Median Sale Price (2024 Dollars)
     type: number
     description: 'Median sales price adjusted for inflation to year of most recent data (2024)'
-  - name: Median Household Income (MSA, 2024 Dollars)
+  - name: Median Household Income (Columbus MSA, 2024 Dollars)
     type: number
     description: 'Median household income adjusted for inflation to year of most recent data (2024)'
+  - name: Percent Change in Median Sale Price (2024 Dollars)
+    type: number
+    description: 'The percent change in median sales price in 2024 dollars'
+  - name: Percent Change in Median Household Income (Columbus MSA, 2024 Dollars)
+    type: number
+    description: 'The percent change in median household income in 2024 dollars'
 missingValues:
   - ''
 primaryKey:

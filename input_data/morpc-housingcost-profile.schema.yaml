@@ -1,40 +1,46 @@
 fields:
-  - name: GEOIDFQ
+  - name: GEO_ID
     type: string
-    description: 'Unique identifier for the geography as issued by MORPC.  These are identical to fully-qualified Census-issued GEOIDs for Census geographies.'
+    description: Geographic ID
   - name: NAME
     type: string
-    description: 'Name of the geography.'    
-  - name: Year
+    description: Name of geography
+  - name: reference_period
     type: year
-    description: 'Year for which the variables are summarized.'
+    description: The year for the index.
   - name: Number of Sales
-    type: integer
-    description: 'Number of sales that are accounted for in the summary'
-  - name: Median Sales Price
     type: number
-    description: 'Median home sale price for the geography, year-of-sale dollars'
-  - name: Median Sales Price MOE
+    description: The number of houses sold in the year in the geography
+  - name: Median Sale Price
     type: number
-    description: '90% measurement of error for sales price'
-  - name: Median Household Income (MSA)
-    type: integer
-    description: 'Median income for residents in Columbus MSA, year-of-sale dollars'
-  - name: Median Household Income MOE (MSA)
+    description: The median sale price for all sale for the year in the given geography
+  - name: Median Sale Price MOE
     type: number
-    description: '90% measurement of error of household income.'
-  - name: Sales Price to Income Index (MSA)
+    description: the error associated with the median sale price
+  - name: Median Household Income (Columbus MSA)
     type: number
-    description: 'Median sales price of geography / median household income (MSA), year-of-sale dollars'
-  - name: Median Sales Price (2024 Dollars)
+    description: The median household income for the entire region of interest
+  - name: Sales Price to Income Index (MORPC 15-county region)
     type: number
-    description: 'Median sales price adjusted for inflation to year of most recent data (2024)'
-  - name: Median Household Income (MSA, 2024 Dollars)
+    description: Home sale price for the geography divided by median household income
+      for the Columbus MSA
+  - name: Median Sale Price (2024 Dollars)
     type: number
-    description: 'Median household income adjusted for inflation to year of most recent data (2024)'
+    description: Home sale price adjusted for inflation to most recent year in data
+  - name: Median Household Income (Columbus MSA, 2024 Dollars)
+    type: number
+    description: Median household income for entire region of interest adjusted to
+      most recent year in data
+  - name: Percent Change in Median Sale Price (2024 Dollars)
+    type: number
+    description: The percent change in median sale price from the base year to the
+      year of observation
+  - name: Percent Change in Median Household Income (Columbus MSA, 2024 Dollars)
+    type: number
+    description: The percent change in median household income from the base year
+      to the year of observation
 missingValues:
   - ''
 primaryKey:
-  - GEOIDFQ
-  - Year
-   
+  - GEO_ID
+  - reference_period

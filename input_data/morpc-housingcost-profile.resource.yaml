@@ -11,6 +11,6 @@ path: morpc-housingcost-profile.csv
 scheme: file
 format: csv
 mediatype: text/csv
-hash: e21aaa21867d62cb45556b75547b0dab
-bytes: 354229
+hash: 575c6766879fccfa272a3192bf339a05
+bytes: 18341
 schema: morpc-housingcost-profile.schema.yaml
